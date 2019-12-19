@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-.clearfix {
+.clearfix::after{
 	content:"";
 	display: block;
 	clear: both;
@@ -13,8 +13,7 @@
 
 main {
 	width: 960px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin: 50px auto;
 }
 
 .step-box {
@@ -32,6 +31,7 @@ main {
 
 .step-img1 {
 	height: 150px;
+	width: 280px;
 	background-image: url(img/flow01.png);
 	background-size: cover;
 	background-position: bottom;
@@ -39,6 +39,7 @@ main {
 
 .step-img2 {
 	height: 150px;
+	width: 280px;
 	background-image: url(img/flow02.png);
 	background-size: cover;
 	background-position: bottom;
@@ -46,6 +47,7 @@ main {
 
 .step-img3 {
 	height: 150px;
+	width: 280px;
 	background-image: url(img/flow03.png);
 	background-size: cover;
 	background-position: bottom;
@@ -63,4 +65,27 @@ main {
 
 .title {
 	margin: 15px 0 5px;
+}
+
+@media screen and (max-width:768px) {
+main {
+	width: 90%;
+    margin: 50px auto;
+}
+.step-box {
+	float: none;
+	margin: 0 auto 20px auto;
+}
+
+.step-box:last-child {
+	margin: 0 auto;
+}
+.step-img1 {
+	background-size: cover;
+}
+.step-img2 {
+	background-size: cover;
+}
+.step-img3 {
+	background-size: cover;
 }

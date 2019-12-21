@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-.clearfix::after{
+.clearfix::after {
 	content:"";
 	display: block;
 	clear: both;
@@ -73,6 +73,7 @@ main {
     margin: 50px auto;
 }
 .step-box {
+	width: 100%;
 	float: none;
 	margin: 0 auto 20px auto;
 }
@@ -81,11 +82,11 @@ main {
 	margin: 0 auto;
 }
 .step-img1 {
-	background-size: cover;
+	width: 100%;
 }
 .step-img2 {
-	background-size: cover;
+	width: 100%;
 }
 .step-img3 {
-	background-size: cover;
-}
+	width: 100%;
+}}
